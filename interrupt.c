@@ -24,4 +24,4 @@ void enableInterrupts(){
 void disableInterrupts(){
     unsigned int status = 0;
     asm volatile("di    %0" : "=r"(status));
-}
+} %0,$16,0" :: "r" (tmp));
